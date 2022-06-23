@@ -1,6 +1,6 @@
 {
   "name": "@mazooma/event-bus",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Event bus service.",
   "author": "mazooma",
   "license": "MIT",
