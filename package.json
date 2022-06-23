@@ -1,0 +1,54 @@
+{
+  "name": "@mazooma/event-bus",
+  "version": "1.0.6",
+  "description": "Event bus service.",
+  "author": "mazooma",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --config jestconfig.json",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mazooma-pl/event-bus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mazooma-pl/event-bus/issues"
+  },
+  "homepage": "https://github.com/mazooma-pl/event-bus#readme",
+  "dependencies": {
+    "rxjs": "^7.5.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.3",
+    "jest": "^28.1.1",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.5",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.7.4"
+  },
+  "keywords": [
+    "event-bus",
+    "event",
+    "bus",
+    "rxjs",
+    "typescript",
+    "Angular",
+    "Vue",
+    "Next.js",
+    "NestJS"
+  ]
+}
