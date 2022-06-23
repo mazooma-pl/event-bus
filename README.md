@@ -1,5 +1,9 @@
 # Event Bus
 
+![npm](https://img.shields.io/npm/v/@mazooma/event-bus?label=npm%20package)
+![npm](https://img.shields.io/npm/l/@mazooma/event-bus)
+![npm](https://img.shields.io/npm/dw/@mazooma/event-bus) ![npm](https://img.shields.io/badge/%40mazooma-event--bus-informational)
+
 ```@mazooma/event-bus``` package contains a [TypeScript](https://www.typescriptlang.org/) service dedicated to use in typescript frameworks, eg. [Angular](https://angular.io/), [Vue](https://vuejs.org/), [Next.js](https://nextjs.org/) or [NestJS](https://nestjs.com/). The service implements an event bus pattern for a real time, internal comunication between components and other services within a typescript application. It is based on the [RxJS](https://rxjs.dev/) library.
 
 ## Installing
